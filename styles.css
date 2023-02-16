@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Mona Sans Header';
+    src:
+        url('./assets/font-header.woff2') format('woff2 supports variations'),
+        url('./assets/font-header.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+@font-face {
+    font-family: 'Mona Sans Regular';
+    src:
+        url('./assets/font-regular.woff2') format('woff2 supports variations'),
+        url('./assets/font-regular.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+:root {
+    --background: #101010;
+    --background-two: #0d0d0d;
+    --foreground: #f5f6f7;
+    --theme: #5865F2;
+    --success: #5cb85c;
+    --error: #d9534f;
+
+    --yellow: #F4E465;
+    --green: #86BB75;
+    --blue: #71A7CB;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Mona Sans Regular', sans-serif;
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+a {
+    color: var(--foreground);
+}
+
+img {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+grammarly-desktop-integration {
+    display: none;
+}
+grammarly-underline {
+    display: none;
+}
+grammarly-dictionary-card {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--background-two);
+    padding: 2.5vh 12.5vw;
+}
+.header-logo {
+    font-size: min(10vw, 24px);
+    font-weight: 900;
+    font-stretch: 75%;
+    font-family: 'Mona Sans Header';
+    text-transform: uppercase;
+}
+.header-logo-yellow {
+    display: inline;
+    outline: 0;
+    color: var(--yellow);
+}
+.header-logo-green {
+    display: inline;
+    outline: 0;
+    color: var(--green);
+}
+.header-logo-blue {
+    display: inline;
+    outline: 0;
+    color: var(--blue);
+}
+.header-logo-white {
+    display: inline;
+    outline: 0;
+    color: var(--white);
+    text-transform: lowercase;
+}
+.header a {
+    margin-left: 1em;
+    font-size: min(10vw, 24px);
+    font-weight: 900;
+    font-stretch: 75%;
+    font-family: 'Mona Sans Header';
+    text-decoration: none;
+    cursor: pointer;
+}
+.header a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding: 2.5vh 12.5vw;
+}
+.main-vpns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 5% 0;
+}
+.main-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 5% 0;
+}
+.main-games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 5% 0;
+}
+.main-item {
+    background-color: var(--background-two);
+    box-shadow: 0 0 10px var(--foreground);
+    padding: 5%;
+    border-radius: 10px;
+    margin: 2.5%;
+}
