@@ -3,23 +3,27 @@
 .settings-options {
     width: 100%;
 }
+
 .settings-options summary {
     display: flex;
     margin-top: 1em;
     cursor: pointer;
 }
+
 .settings-options h3 {
     margin-top: 1em;
 }
+
 .settings-options-input {
     display: block;
     width: 50%;
-    padding: 0.625%;
+    padding: 0.5em;
     margin: 1.25% 0;
     border-radius: 10px;
     background-color: var(--background-two);
     box-shadow: 0 0 10px var(--foreground);
 }
+
 .settings-options-input input {
     width: 100%;
     background-color: transparent;
@@ -28,14 +32,16 @@
     color: var(--foreground);
     caret-color: var(--foreground);
 }
+
 .settings-options-buttons {
     margin-top: 2.5%;
     width: 50%;
     display: flex;
     justify-content: space-around;
 }
+
 .settings-options-buttons button {
-    padding: 1.5%;
+    padding: 1em;
     color: var(--foreground);
     background-color: var(--background-two);
     box-shadow: 0 0 10px var(--foreground);
