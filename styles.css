@@ -116,7 +116,7 @@ grammarly-extension, grammarly-desktop-integration, grammarly-underline, grammar
     text-decoration: underline;
 }
 
-#notForums .main {
+.main {
     padding: 2.5vh 12.5vw;
 }
 
@@ -158,6 +158,6 @@ grammarly-extension, grammarly-desktop-integration, grammarly-underline, grammar
     }
 
     .body {
-        display: none;
+        display: none !important;
     }
 }
