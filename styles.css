@@ -35,6 +35,11 @@
     color-scheme: dark;
 }
 
+[data-color-scheme="dark"] .github-corner svg {
+    fill:#0a0a0a; 
+    color: #f5f6f7; 
+}
+
 [data-color-scheme="light"] {
     --background: #f2f2f2;
     --background-two: #c2c2c2;
@@ -46,6 +51,11 @@
     --blue: #5a86a2;
     --white: #000000;
     color-scheme: light;
+}
+
+[data-color-scheme="light"] .github-corner svg {
+    fill:#afafaf; 
+    color: #000000; 
 }
 
 * {
@@ -191,5 +201,42 @@ grammarly-popups {
 
     .body {
         display: none !important;
+    }
+}
+
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+.github-corner svg {
+    height: calc(27.987px + (2.5vh * 2));
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
     }
 }
