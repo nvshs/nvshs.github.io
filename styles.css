@@ -36,8 +36,8 @@
 }
 
 [data-color-scheme="dark"] .github-corner svg {
-    fill:#0a0a0a; 
-    color: #f5f6f7; 
+    fill: #0a0a0a;
+    color: #f5f6f7;
 }
 
 [data-color-scheme="light"] {
@@ -54,8 +54,8 @@
 }
 
 [data-color-scheme="light"] .github-corner svg {
-    fill:#afafaf; 
-    color: #000000; 
+    fill: #afafaf;
+    color: #000000;
 }
 
 * {
@@ -93,6 +93,13 @@ grammarly-underline,
 grammarly-dictionary-card,
 grammarly-popups {
     display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    border: 0;
 }
 
 .body {
@@ -204,7 +211,6 @@ grammarly-popups {
     }
 }
 
-
 .github-corner:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out
 }
@@ -228,15 +234,5 @@ grammarly-popups {
     40%,
     80% {
         transform: rotate(10deg)
-    }
-}
-
-@media (max-width:500px) {
-    .github-corner:hover .octo-arm {
-        animation: none
-    }
-
-    .github-corner .octo-arm {
-        animation: octocat-wave 560ms ease-in-out
     }
 }

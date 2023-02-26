@@ -16,3 +16,5 @@ if (colourStorage == 0) {
 if (colourStorage == 1) {
     document.documentElement.setAttribute("data-color-scheme", "light");
 }
+
+document.getElementById('year').innerHTML = new Date().getFullYear();
