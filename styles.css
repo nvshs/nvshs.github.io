@@ -17,10 +17,6 @@
 }
 
 :root {
-    --background: #101010;
-    --background-two: #0d0d0d;
-    --background-three: #0f0f0f;
-    --foreground: #f5f6f7;
     --theme: #5865F2;
     --success: #5cb85c;
     --error: #d9534f;
@@ -31,18 +27,38 @@
     --white: #FFFFFF;
 }
 
+[data-color-scheme="dark"] {
+    --background: #101010;
+    --background-two: #0d0d0d;
+    --background-three: #0f0f0f;
+    --foreground: #f5f6f7;
+    color-scheme: dark;
+}
+
+[data-color-scheme="light"] {
+    --background: #f2f2f2;
+    --background-two: #c2c2c2;
+    --background-three: #e6e6e6;
+    --foreground: #000;
+    --white: #000;
+    color-scheme: light;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color-scheme: inherit;
 }
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
     font-family: 'Mona Sans Regular', sans-serif;
     color: var(--foreground);
     background-color: var(--background);
+    overflow-y: scroll;
 }
 
 a {
@@ -57,8 +73,18 @@ img {
     -webkit-user-select: none;
 }
 
-grammarly-extension, grammarly-desktop-integration, grammarly-underline, grammarly-dictionary-card, grammarly-popups {
+grammarly-extension,
+grammarly-desktop-integration,
+grammarly-underline,
+grammarly-dictionary-card,
+grammarly-popups {
     display: none;
+}
+
+.body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 .header {
@@ -67,6 +93,7 @@ grammarly-extension, grammarly-desktop-integration, grammarly-underline, grammar
     width: 100%;
     background-color: var(--background-two);
     padding: 2.5vh 12.5vw;
+    flex: 0 1 auto;
 }
 
 .header-logo {
@@ -118,6 +145,7 @@ grammarly-extension, grammarly-desktop-integration, grammarly-underline, grammar
 
 .main {
     padding: 2.5vh 12.5vw;
+    flex: 1 1 auto;
 }
 
 .main-vpns {

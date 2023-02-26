@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-scheme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,6 @@
             <nav>
                 <a href="../">Home</a>
                 <a href="../sound">Sounds</a>
-                <a href="../forums">Forums</a>
                 <a href="./settings">Settings</a>
             </nav>
         </header>
@@ -58,6 +57,17 @@
                     <button id="btnIcon" onclick="setIcon()">Set Icon</button>
                     <button id="btnReset" onclick="reset()">Reset</button>
                 </div>
+            </details>
+            <details open class="settings-options">
+                <summary>
+                    <h2>Colour Theme</h2>
+                </summary>
+                <h3>Theme</h3>
+                <select class="settings-options-select" id="colour" onchange="setColour()" >
+                    <option value="" disabled selected>Select a Colour Theme</option>
+                    <option value="0">Dark</option>
+                    <option value="1">Light</option>
+                </select>
             </details>
         </div>
     </div>
