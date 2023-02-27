@@ -96,7 +96,7 @@ grammarly-popups {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 1%;
     right: 1%;
     border: 0;
@@ -183,16 +183,29 @@ footer {
 
 .main-games {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     margin: 0 0 5% 0;
 }
 
 .main-item {
     background-color: var(--background-two);
     box-shadow: 0 0 10px var(--foreground);
-    padding: 1.25em;
+    padding: 20px;
     border-radius: 10px;
-    margin: 2.5%;
+    margin: 5%;
+}
+
+.main-item.game {
+    padding: 0;
+}
+
+.main-item.game h2 {
+    padding: 20px;
+}
+
+.main-item.game img {
+    width: 100%;
+    border-radius: 10px; 
 }
 
 .error {
@@ -201,6 +214,11 @@ footer {
     margin: 1em;
 }
 
+@media only screen and (max-width: 1440px) {
+    .main-games {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 @media only screen and (max-width: 1020px) {
     .error {
         display: block;
