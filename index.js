@@ -17,4 +17,16 @@ if (colourStorage == 1) {
     document.documentElement.setAttribute("data-color-scheme", "light");
 }
 
-document.getElementById('year').innerHTML = new Date().getFullYear();
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
+if (window.location.origin != "https://nvshs.github.io") {
+    document.getElementById("body").style.display = "none"
+    var flash = false;
+    var task = setInterval(function () {
+        if ((flash = !flash)) {
+            document.body.style.backgroundColor = "#ff0";
+        } else {
+            document.body.style.backgroundColor = "#f00"
+        }
+    }, 10);
+}

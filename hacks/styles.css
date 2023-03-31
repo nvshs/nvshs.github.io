@@ -1,0 +1,9 @@
+@import url(../styles.css);
+
+.main iframe {
+    width: 100%; 
+    aspect-ratio: 16/9;
+    border: 0; 
+    margin: 0; 
+    padding: 0;
+}
