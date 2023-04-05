@@ -19,6 +19,7 @@ if (colourStorage == 1) {
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+/*
 if (window.location.origin != "https://nvshs.github.io") {
     document.getElementById("body").style.display = "none"
     var flash = false;
@@ -30,3 +31,4 @@ if (window.location.origin != "https://nvshs.github.io") {
         }
     }, 10);
 }
+*/

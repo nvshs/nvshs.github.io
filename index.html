@@ -10,6 +10,19 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="./index.js" defer></script>
+    <script defer>
+        if (window.location.origin != "https://nvshs.github.io") {
+            document.getElementById("body").style.display = "none"
+            var flash = false;
+            var task = setInterval(function () {
+                if ((flash = !flash)) {
+                    document.body.style.backgroundColor = "#ff0";
+                } else {
+                    document.body.style.backgroundColor = "#f00"
+                }
+            }, 10);
+        }
+    </script>
 </head>
 
 <body>
@@ -22,7 +35,7 @@
         <p style="margin-top: 2em;">- <a href="https://github.com/what-question-mark">@what-question-mark</a> (Lead
             Developer)</p>
     </div>
-    <div class="body" id="body">
+    <section class="body" id="body">
         <a href="https://github.com/nvshs" target="_blank" class="github-corner" aria-label="View source on GitHub">
             <svg viewBox="0 0 250 250" style="position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
                 <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -57,10 +70,28 @@
                 <a class="main-item" href="./hacks/blooket/index.html">
                    <h2>Blooket Hacks</h2>
                 </a>
+                <a class="main-item" href="./hacks/pixal/index.html">
+                   <h2>ChatGPT PIXAL Paragraph</h2>
+                </a>
             </section>
             <section id="links" class="main-links">
-                <a class="main-item">
-                    <h2>Link Example</h2>
+                <a class="main-item" href="https://tbg95.github.io/" target="_blank"">
+                    <h2>Tgb95</h2>
+                </a>
+                <a class="main-item" href="https://emulatoros.github.io/" target="_blank"">
+                    <h2>EmulatorOS</h2>
+                </a>
+                <a class="main-item" href="https://mountain658.github.io/" target="_blank"">
+                    <h2>Mountain658</h2>
+                </a>
+                <a class="main-item" href="https://iview.abc.net.au/" target="_blank"">
+                    <h2>ABC iView</h2>
+                </a>
+                <a class="main-item" href="https://sandspiel.club/" target="_blank"">
+                    <h2>Sandspiel</h2>
+                </a>
+                <a class="main-item" href="https://studio.sandspiel.club/" target="_blank"">
+                    <h2>Sandspiel Studio</h2>
                 </a>
             </section>
             <section id="games" class="main-games">
@@ -68,8 +99,16 @@
                     <img src="./games/assets/fireboy-watergirl.jpg" />
                     <h2>Fireboy & Watergirl</h2>
                 </a>
+                <a class="main-item game" href="./games/motox3m/">
+                    <img src="./games/assets/moto-x3m.jpg" />
+                    <h2>Moto x3m</h2>
+                </a>
+                <a class="main-item game" href="./games/drivemad/">
+                    <img src="./games/assets/drive-mad.jpg" />
+                    <h2>Drive Mad</h2>
+                </a>
             </section>
-    </div>
+        </section>
     </div>
     <footer>
         <h3>© <a href="https://github.com/what-question-mark" target="_blank">what-question-mark</a> <span

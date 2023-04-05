@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Mona Sans Header';
+    src:
+        url('./assets/font-header.woff2') format('woff2 supports variations'),
+        url('./assets/font-header.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Mona Sans Regular';
+    src:
+        url('./assets/font-regular.woff2') format('woff2 supports variations'),
+        url('./assets/font-regular.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    font-family: 'Mona Sans Regular', sans-serif;
+}

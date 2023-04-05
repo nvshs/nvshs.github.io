@@ -192,11 +192,12 @@ footer {
     box-shadow: 0 0 10px var(--foreground);
     padding: 20px;
     border-radius: 10px;
-    margin: 5% 5% 5% 0;
+    margin: 5% 7.5% 5% 0;
 }
 
 .main-item.game {
     padding: 0;
+    margin: 5% 5% 5% 0;
 }
 
 .main-item.game h2 {

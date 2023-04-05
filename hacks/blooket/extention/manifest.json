@@ -1,0 +1,16 @@
+{
+    "name": "Blooket Hacks",
+    "description": "Blooket Hacks",
+    "version": "1",
+    "manifest_version": 3,
+    "permissions": [],
+    "host_permissions": [],
+    "action": {
+        "default_title": "Blooket Hacks",
+        "default_icon": "src/assets/icon.png",
+        "default_popup": "src/index.html"
+    },
+    "icons": {
+        "128": "src/assets/icon.png"
+    }
+}
