@@ -10,19 +10,6 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="./index.js" defer></script>
-    <script defer>
-        if (window.location.origin != "https://nvshs.github.io") {
-            document.getElementById("body").style.display = "none"
-            var flash = false;
-            var task = setInterval(function () {
-                if ((flash = !flash)) {
-                    document.body.style.backgroundColor = "#ff0";
-                } else {
-                    document.body.style.backgroundColor = "#f00"
-                }
-            }, 10);
-        }
-    </script>
 </head>
 
 <body>
